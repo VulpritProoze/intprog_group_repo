@@ -33,3 +33,10 @@ export const getById = async (id: number) => {
   if (!user) throw "User not found";
   return user;
 };
+
+export const _delete = async (id: number) => {
+    const user = await userRepository.findOneBy({ id });
+    if (!user) throw "User not found";
+    await userRepository.remove(user);
+  };
+  
