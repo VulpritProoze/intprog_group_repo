@@ -4,7 +4,7 @@ import cors from "cors";
 import helmet from "helmet";
 import initialize from "./db";
 import errorHandler from "./_middleware/error-handler";
-// import userRouter from "./routes/user.controller";
+import { userRouter } from "./routes/user.controller";
 
 // Define app to use express module
 const app = express();
@@ -28,7 +28,7 @@ initialize()
     });
 
 // Routes
-// app.use("/users", userRouter);
+app.use("/users", userRouter);
 
 // Initiate global error handler
 // create interface for ErrorHandler
