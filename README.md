@@ -85,6 +85,4 @@ You can use **Thunder Client** or **Postman** to test the API.
 -Vanness Benitez `(benitez-repo branch)`
 ---
 
-## License
-[Include license information if applicable]
 
