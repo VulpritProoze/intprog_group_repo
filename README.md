@@ -78,11 +78,12 @@ You can use **Thunder Client** or **Postman** to test the API.
 ---
 
 ## Contributors
-[List team members here]
--Ram Railey Alin `(main branch)`
--Caleb Micah Guinto `(Guinto-user-creation branch)`
--Pete Andre Licanda `(licanda-user-listing-and-retrieval branch)`
--Vanness Benitez `(benitez-repo branch)`
+
+- Ram Railey Alin `(main branch)`
+- Caleb Micah Guinto `(Guinto-user-creation branch)`
+- Pete Andre Licanda `(licanda-user-listing-and-retrieval branch)`
+- Vanness Benitez `(benitez-repo branch)`
+
 ---
 
 
