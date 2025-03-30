@@ -23,3 +23,13 @@ export const create = async (params: any) => {
     // Save user
     await userRepository.save(user);
   };
+  
+export const getAll = async () => {
+  return await userRepository.find();
+};
+
+export const getById = async (id: number) => {
+  const user = await userRepository.findOneBy({ id });
+  if (!user) throw "User not found";
+  return user;
+};

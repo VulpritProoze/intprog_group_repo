@@ -14,3 +14,20 @@ router.post("/", async (req: Request, res: Response, next: NextFunction) => {
 
 
   export const userRouter = router;
+router.get("/", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const users = await userService.getAll();
+    res.json(users);
+  } catch (err) {
+    next(err);
+  }
+});
+
+router.get("/:id", async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const user = await userService.getById(parseInt(req.params.id));
+    res.json(user);
+  } catch (err) {
+    next(err);
+  }
+});
