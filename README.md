@@ -24,7 +24,11 @@ To get started with this project, follow these steps:
    ```sh
    npm install
    ```
-4. Run the development server:
+4. Run XAMPP:
+   - open xampp
+   - run Apache server and MySQL database server (ensure you use port 3306 for MySQL)
+   
+5. Run the development server:
    ```sh
    npm run dev
    ```
